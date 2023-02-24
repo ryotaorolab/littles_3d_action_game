@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{8832940D-1987-5535-E45B-2F523580E12E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/PlayerScript.cs">
+    <Files>
+      <File FileName="Assets/Script/PlayerScript.cs" Line="57" Column="43" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="littles_3d_action_game" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f7305bff-255c-4725-a968-d55b2a406009" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
