@@ -74,7 +74,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "Chick2")
+        if(collision.gameObject.name == "Chick")
         {
             // 当たった時に棘を隠している状況のときだったら
             if(stopsize == true)
