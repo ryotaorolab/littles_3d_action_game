@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour
     private bool isGround;
     [SerializeField]
     float gravityPower; //調整必要　例 - 1000
+    private Animator anim;  //Animatorをanimという変数で定義する
 
 
     // Start is called before the first frame update
@@ -25,6 +26,8 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = this.gameObject.GetComponent<Rigidbody>();
         isGround = false;
+        // 変数animに、Animatorコンポーネントを設定する
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,7 +42,12 @@ public class PlayerScript : MonoBehaviour
 
 
         // animator.SetFloat("Walk", rb.velocity.magnitude); //歩くアニメーションに切り替える
-        
+        if(Input.GetAxisRaw("Vertical") != 0) {
+            animator.SetBool("Walk", true);
+        } else
+        {
+            animator.SetBool("Walk", false);
+        }
         if(target_dir.magnitude > 0.1)
         {
             //キーを押し方向転換

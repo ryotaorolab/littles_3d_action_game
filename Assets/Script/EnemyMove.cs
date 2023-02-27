@@ -18,14 +18,13 @@ public class EnemyMove : MonoBehaviour
 
     [SerializeField]
     bool LoopSwitch = false;
-    
 
     void Start()
     {
         transform.position = positions[0]; // オブジェクトの位置を配列の最初の要素に設定
         transform.Rotate(rotations[0]); //オブジェクトの回転を配列の最初の要素に設定
-
-        if(positions.Length != rotations.Length)
+        
+        if (positions.Length != rotations.Length)
         {
             rotations = new Vector3[positions.Length]; // 要素数を配列positionsに合わせる
         }
