@@ -42,7 +42,7 @@ public class PlayerScript : MonoBehaviour
 
 
         // animator.SetFloat("Walk", rb.velocity.magnitude); //歩くアニメーションに切り替える
-        if(Input.GetAxisRaw("Vertical") != 0) {
+        if(Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0) {
             animator.SetBool("Walk", true);
         } else
         {
