@@ -371,6 +371,7 @@
 "Assets/Script/CameraController.cs"
 "Assets/Script/EnemyController.cs"
 "Assets/Script/EnemyMove.cs"
+"Assets/Script/KakeraScript.cs"
 "Assets/Script/PlayerScript.cs"
 -langversion:9.0
 
