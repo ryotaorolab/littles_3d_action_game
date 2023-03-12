@@ -35,7 +35,7 @@ public class PlayerScript : MonoBehaviour
     {
         // x,z 平面での移動
         x = Input.GetAxisRaw("Horizontal");
-        z = Input.GetAxisRaw("Vertical");
+        // z = Input.GetAxisRaw("Vertical");
 
         Vector3 target_dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         rb.velocity = new Vector3(x, -1, z) * Speed; //歩く速度
@@ -48,6 +48,7 @@ public class PlayerScript : MonoBehaviour
         {
             animator.SetBool("Walk", false);
         }
+
         if(target_dir.magnitude > 0.1)
         {
             //キーを押し方向転換
@@ -59,6 +60,23 @@ public class PlayerScript : MonoBehaviour
         {
             rb.AddForce(transform.up * upForce, ForceMode.Impulse);
             Debug.Log("ジャンプした。");
+        }
+
+        bool LRPush = false; // 右左のボタンが押されているとき、前に進むのをやめるフラグ
+
+        // 前進し続ける。左右キーが押されるまで
+        if (!LRPush)
+        {
+            Quaternion rotation = Quaternion.LookRotation(target_dir);
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * smooth);
+            z = 1;
+        }
+
+        // 左右のキーが押されているとき
+        if(!(x == 0))
+        {
+            LRPush = true;
+            z = 0;
         }
     }
     private void FixedUpdate()

@@ -21,6 +21,20 @@ public class KakeraScript : MonoBehaviour
     [SerializeField]
     float SizeDuration = 3f; // 変化にかかる時間
 
+    // 目的地の座標
+    [SerializeField]
+    Vector3 targetPosition;
+    // 移動時間（秒）
+    [SerializeField]
+    float moveTime;
+    // 移動中かどうか
+    private bool moving = false;
+    // 移動開始時の座標
+    [SerializeField]
+    private Vector3 startPosition;
+    // 移動開始時の時間
+    private float startTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +57,27 @@ public class KakeraScript : MonoBehaviour
         {
             StartCoroutine(ScaleUpAndDown());
         }
-    }
+
+        // 移動中なら
+        if (moving)
+        {
+            // 経過時間の割合を計算
+            float ratio = (Time.time - startTime) / moveTime;
+            // 割合が1以上なら
+            if (ratio >= 1f)
+            {
+                // 目的地に到着
+                transform.position = targetPosition;
+                // 移動中フラグを下ろす
+                moving = false;
+            }
+            else
+            {
+                // 目的地に向かって移動
+                transform.position = Vector3.Lerp(startPosition, targetPosition, ratio);
+            }
+        }
+}
     IEnumerator ScaleUpAndDown()
     {
         while (true)
@@ -78,6 +112,16 @@ public class KakeraScript : MonoBehaviour
             if (getScore == false)
             {
                 // かけらの数を増やす処理を記載
+            }
+
+            // 移動中でなければ
+            if (!moving)
+            {
+                // 移動開始時の座標と時間を記録
+                startPosition = transform.position;
+                startTime = Time.time;
+                // 移動中フラグを立てる
+                moving = true;
             }
         }
     }

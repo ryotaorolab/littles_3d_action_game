@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2194.286
     height: 1144
   m_ShowMode: 4
-  m_Title: "\u30B2\u30FC\u30E0"
+  m_Title: "\u30B7\u30FC\u30F3"
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 16
+  controlID: 20
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 21
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,8 +164,8 @@ MonoBehaviour:
     y: 0
     width: 507.42847
     height: 1094
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -242,8 +242,8 @@ MonoBehaviour:
     y: 0
     width: 832.5714
     height: 292.85712
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -357,22 +357,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/IkinokoBattle/Model/StageItem
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/IkinokoBattle/Model/StageItem
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\document\UnityProject\littles_3d_action_game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 20.714325}
-    m_SelectedIDs: 2e990000
-    m_LastClickedID: 39214
-    m_ExpandedIDs: 00000000f8920000fa920000fc920000fe9200000093000002930000049300000693000008930000909400002c99000000ca9a3bffffff7f
+    m_SelectedIDs: 98940000
+    m_LastClickedID: 38040
+    m_ExpandedIDs: 00000000fa920000fc920000fe92000000930000029300000493000006930000089300000a93000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,7 +400,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f8920000fa920000fc920000fe9200000093000002930000049300000693000008930000
+    m_ExpandedIDs: 00000000fa920000fc920000fe92000000930000029300000493000006930000089300000a930000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -773,9 +773,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.56072426, y: 3.1198041, z: 8.03276}
+    m_Target: {x: -6.652263, y: 2.8818197, z: 45.728455}
     speed: 2
-    m_Value: {x: 0.56072426, y: 3.1198041, z: 8.03276}
+    m_Value: {x: -6.652263, y: 2.8818197, z: 45.728455}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -822,13 +822,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.085395634, y: 0.0029893445, z: -0.00025569176, w: 0.9963457}
+    m_Target: {x: 0.44438472, y: 0.006718759, z: -0.003332334, w: 0.89580804}
     speed: 2
-    m_Value: {x: 0.085395366, y: 0.0029893352, z: -0.00025569097, w: 0.9963426}
+    m_Value: {x: 0.44437793, y: 0.008062439, z: -0.003998895, w: 0.8957943}
   m_Size:
-    m_Target: 7.66236
+    m_Target: 7.602081
     speed: 2
-    m_Value: 7.66236
+    m_Value: 7.602081
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -883,10 +883,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 6352}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1cfbffff
+      m_ExpandedIDs: 1cfbffff168e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
