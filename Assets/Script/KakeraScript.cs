@@ -34,11 +34,17 @@ public class KakeraScript : MonoBehaviour
     private Vector3 startPosition;
     // 移動開始時の時間
     private float startTime;
+    // 会話メッセージ
+    [SerializeField]
+    string[] sentences;
+
+    GameObject TalkObject;
 
     // Start is called before the first frame update
     void Start()
     {
         nowPosi = this.transform.position.y;
+        TalkObject = GameObject.Find("TalkController");
     }
 
     // Update is called once per frame
@@ -123,6 +129,8 @@ public class KakeraScript : MonoBehaviour
                 // 移動中フラグを立てる
                 moving = true;
             }
+
+            TalkObject.GetComponent<TalkScript>().TalkStart(sentences);
         }
     }
 }

@@ -19,9 +19,6 @@ public class EnemyMove : MonoBehaviour
     [SerializeField]
     bool LoopSwitch = false;
 
-
-
-
     void Start()
     {
         transform.position = positions[0]; // オブジェクトの位置を配列の最初の要素に設定
