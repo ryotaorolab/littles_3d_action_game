@@ -7,6 +7,8 @@ public class TalkScript : MonoBehaviour
 {
     [SerializeField]
     Text dialogueText;
+    [SerializeField]
+    GameObject TextDialog;
     public string[] sentences;
     private int index;
     [SerializeField]
@@ -14,16 +16,22 @@ public class TalkScript : MonoBehaviour
 
     [SerializeField]
     bool TouchSwitch = false;
+    GameObject ChickPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ChickPlayer = GameObject.Find("Chick");
+        TextDialog.SetActive(false);
     }
 
     // 外部から会話機能を呼び出しを行う場合の処理
     public void TalkStart(string[] Talksentences)
     {
+        // プレイヤーの動きを一時的に止める
+        ChickPlayer.GetComponent<PlayerScript>().StateMove = true;
+        // トークダイアログを表示させる
+        TextDialog.SetActive(true);
         sentences = Talksentences;
         StartCoroutine(Type());
     }
@@ -60,6 +68,10 @@ public class TalkScript : MonoBehaviour
         } else
         {
             dialogueText.text = "";
+            // プレイヤーの動きを再開する
+            ChickPlayer.GetComponent<PlayerScript>().StateMove = false;
+            // トークダイアログを非表示させる
+            TextDialog.SetActive(false);
         }
     }
 

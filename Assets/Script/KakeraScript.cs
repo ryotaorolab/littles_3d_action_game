@@ -39,12 +39,14 @@ public class KakeraScript : MonoBehaviour
     string[] sentences;
 
     GameObject TalkObject;
+    GameObject ChickPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
         nowPosi = this.transform.position.y;
         TalkObject = GameObject.Find("TalkController");
+        ChickPlayer = GameObject.Find("Chick");
     }
 
     // Update is called once per frame
@@ -111,7 +113,6 @@ public class KakeraScript : MonoBehaviour
         if (!isGet && other.CompareTag("Player"))
         {
             isGet = true;
-
             // かけらを上にホイップさせる
             transform.position += Vector3.up * 1.5f;
             bool getScore = false;
