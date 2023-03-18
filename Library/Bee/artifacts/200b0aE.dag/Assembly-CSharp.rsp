@@ -371,9 +371,11 @@
 "Assets/Script/CameraController.cs"
 "Assets/Script/EnemyController.cs"
 "Assets/Script/EnemyMove.cs"
+"Assets/Script/HPController.cs"
 "Assets/Script/KakeraScript.cs"
 "Assets/Script/PlayerScript.cs"
 "Assets/Script/TalkScript.cs"
+"Assets/Script/TutorialJump.cs"
 -langversion:9.0
 
 /deterministic

@@ -13,10 +13,13 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField]
     float Time_now = 0;
+    GameObject HPController;
+    HPController hpController;
     // Start is called before the first frame update
     void Start()
     {
-        
+        HPController = GameObject.Find("HPController");
+        hpController = HPController.GetComponent<HPController>();
     }
 
     bool stopsize = false;
@@ -82,7 +85,7 @@ public class EnemyController : MonoBehaviour
                 Destroy(this.gameObject);
             } else
             { // 棘を出しているときに当たった時の処理
-                Debug.Log("ダメージ");
+                hpController.HPreduce(1);
             }
         }
     }

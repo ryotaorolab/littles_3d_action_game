@@ -63,7 +63,9 @@
     <Compile Include="Assets\Script\PlayerScript.cs" />
     <Compile Include="Assets\Script\EnemyController.cs" />
     <Compile Include="Assets\IkinokoBattle\Model\StageItem\CoinScript.cs" />
+    <Compile Include="Assets\Script\HPController.cs" />
     <Compile Include="Assets\Script\CameraController.cs" />
+    <Compile Include="Assets\Script\TutorialJump.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\Toon.shader" />
