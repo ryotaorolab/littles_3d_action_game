@@ -374,8 +374,11 @@
 "Assets/Script/HPController.cs"
 "Assets/Script/KakeraScript.cs"
 "Assets/Script/PlayerScript.cs"
+"Assets/Script/Start/CameraMove.cs"
+"Assets/Script/Start/TeleportScript.cs"
+"Assets/Script/Start/TutorialJump.cs"
+"Assets/Script/Start/TutorialMocie.cs"
 "Assets/Script/TalkScript.cs"
-"Assets/Script/TutorialJump.cs"
 -langversion:9.0
 
 /deterministic
