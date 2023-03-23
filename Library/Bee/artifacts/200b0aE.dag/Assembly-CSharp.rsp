@@ -369,6 +369,7 @@
 "Assets/IkinokoBattle/Model/StageItem/CoinManagement.cs"
 "Assets/IkinokoBattle/Model/StageItem/CoinScript.cs"
 "Assets/Script/CameraController.cs"
+"Assets/Script/DieAreaScript.cs"
 "Assets/Script/EnemyController.cs"
 "Assets/Script/EnemyMove.cs"
 "Assets/Script/HPController.cs"
@@ -379,6 +380,7 @@
 "Assets/Script/Start/TutorialJump.cs"
 "Assets/Script/Start/TutorialMocie.cs"
 "Assets/Script/TalkScript.cs"
+"Assets/Script/ThornContloller.cs"
 -langversion:9.0
 
 /deterministic

@@ -60,6 +60,7 @@
     <Compile Include="Assets\Script\EnemyMove.cs" />
     <Compile Include="Assets\IkinokoBattle\Model\StageItem\CoinManagement.cs" />
     <Compile Include="Assets\Script\TalkScript.cs" />
+    <Compile Include="Assets\Script\Start\CameraMove.cs" />
     <Compile Include="Assets\Script\Start\TutorialJump.cs" />
     <Compile Include="Assets\Script\PlayerScript.cs" />
     <Compile Include="Assets\Script\EnemyController.cs" />
@@ -67,8 +68,9 @@
     <Compile Include="Assets\Script\Start\TeleportScript.cs" />
     <Compile Include="Assets\Script\HPController.cs" />
     <Compile Include="Assets\Script\CameraController.cs" />
-    <Compile Include="Assets\Script\Start\CameraMove.cs" />
     <Compile Include="Assets\Script\Start\TutorialMocie.cs" />
+    <Compile Include="Assets\Script\ThornContloller.cs" />
+    <Compile Include="Assets\Script\DieAreaScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\Toon.shader" />
