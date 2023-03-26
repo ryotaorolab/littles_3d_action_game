@@ -368,6 +368,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/IkinokoBattle/Model/StageItem/CoinManagement.cs"
 "Assets/IkinokoBattle/Model/StageItem/CoinScript.cs"
+"Assets/Script/AcceleratingPlate.cs"
 "Assets/Script/CameraController.cs"
 "Assets/Script/DieAreaScript.cs"
 "Assets/Script/EnemyController.cs"
