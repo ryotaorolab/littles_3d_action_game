@@ -72,6 +72,7 @@
     <Compile Include="Assets\Script\DieAreaScript.cs" />
     <Compile Include="Assets\Script\Start\TutorialMocie.cs" />
     <Compile Include="Assets\Script\AcceleratingPlate.cs" />
+    <Compile Include="Assets\Script\Goal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\Toon.shader" />

@@ -373,6 +373,7 @@
 "Assets/Script/DieAreaScript.cs"
 "Assets/Script/EnemyController.cs"
 "Assets/Script/EnemyMove.cs"
+"Assets/Script/Goal.cs"
 "Assets/Script/HPController.cs"
 "Assets/Script/KakeraScript.cs"
 "Assets/Script/PlayerScript.cs"
