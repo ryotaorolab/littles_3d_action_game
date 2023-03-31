@@ -37,13 +37,16 @@ public class PlayerScript : MonoBehaviour
         if(!StateMove)
         {
             // x,z 平面での移動
+            
+            // PC対応のときはこれをコメントアウト解除する
+            // スマホ対応のときはこれをコメントアウトするように。
             x = Input.GetAxisRaw("Horizontal");
+
             // z = Input.GetAxisRaw("Vertical");
 
-            Vector3 target_dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            Vector3 target_dir = new Vector3(x, 0, Input.GetAxis("Vertical"));
             rb.velocity = new Vector3(x, -1, z) * Speed; //歩く速度
 
-            // animator.SetFloat("Walk", rb.velocity.magnitude); //歩くアニメーションに切り替える
             if (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0)
             {
                 animator.SetBool("Walk", true);
@@ -83,6 +86,22 @@ public class PlayerScript : MonoBehaviour
                 LRPush = true;
                 z = 0;
             }
+
+            // スマホ操作用のボタン向けコード
+            // Lボタンが押されたとき右に移動する
+            if (OnLbutton)
+            {
+                x = -1;
+            }
+            if (OnRbutton)
+            {
+                x = 1;
+            }
+            // 離したとき
+            if (!OnLbutton && !OnRbutton)
+            {
+                x = 0;
+            }
         }
     }
     private void FixedUpdate()
@@ -113,4 +132,27 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    // スマホのボタン操作用関数
+    bool OnLbutton = false;
+    // Lボタンを押したとき(右に行くようにする)
+    public void OnPushButtonL()
+    {
+        OnLbutton = true;
+    }
+    // Lボタンを離したとき
+    public void OndisengageButtonL()
+    {
+        OnLbutton = false;
+    }
+    bool OnRbutton = false;
+    // Rボタンを押したとき(左に行くようにする)
+    public void OnPushButtonR()
+    {
+        OnRbutton = true;
+    }
+    // Rボタンを離したとき
+    public void OndisengageButtonR()
+    {
+        OnRbutton = false;
+    }
 }
