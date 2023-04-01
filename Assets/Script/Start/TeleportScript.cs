@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TeleportScript : MonoBehaviour
 {
+    [SerializeField]
+    GameObject JumpPad;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,9 @@ public class TeleportScript : MonoBehaviour
             TutorialMocie tutorialMocie = BossChick.GetComponent<TutorialMocie>();
             tutorialMocie.enabled = true;
             // SceneManager.LoadScene("Scene1");
+
+            // ジャンプパッドを削除する
+            JumpPad.SetActive(false);
         }
     }
 }

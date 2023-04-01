@@ -66,7 +66,6 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && isGround)
             {
                 rb.AddForce(transform.up * upForce, ForceMode.Impulse);
-                Debug.Log("ジャンプした。");
             }
 
             bool LRPush = false; // 右左のボタンが押されているとき、前に進むのをやめるフラグ
@@ -154,5 +153,14 @@ public class PlayerScript : MonoBehaviour
     public void OndisengageButtonR()
     {
         OnRbutton = false;
+    }
+
+    // スマホ向けのジャンプボタンの処理
+    public void OnJumpButton()
+    {
+        if (isGround)
+        {
+            rb.AddForce(transform.up * upForce, ForceMode.Impulse);
+        }
     }
 }

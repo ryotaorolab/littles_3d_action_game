@@ -18,6 +18,9 @@ public class TalkScript : MonoBehaviour
     bool TouchSwitch = false;
     GameObject ChickPlayer;
 
+    [SerializeField]
+    GameObject TouchPadL, TouchPadR, TouchPadJump;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,11 @@ public class TalkScript : MonoBehaviour
         TextDialog.SetActive(true);
         sentences = Talksentences;
         StartCoroutine(Type());
+
+        // タッチパッドを非表示にする
+        TouchPadL.SetActive(false);
+        TouchPadR.SetActive(false);
+        TouchPadJump.SetActive(false);
     }
 
     // Update is called once per frame
@@ -72,6 +80,10 @@ public class TalkScript : MonoBehaviour
             ChickPlayer.GetComponent<PlayerScript>().StateMove = false;
             // トークダイアログを非表示させる
             TextDialog.SetActive(false);
+            // タッチパッドを表示にする
+            TouchPadL.SetActive(true);
+            TouchPadR.SetActive(true);
+            TouchPadJump.SetActive(true);
         }
     }
 

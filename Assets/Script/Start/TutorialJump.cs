@@ -32,4 +32,9 @@ public class TutorialJump : MonoBehaviour
             isGrounded = true; //　地面に接したらTrueにする
         }
     }
+
+    public void OnJumpButtonPad()
+    {
+        rb.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
+    }
 }
