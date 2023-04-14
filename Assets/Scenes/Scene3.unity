@@ -10040,6 +10040,10 @@ MonoBehaviour:
   CarPrefab: {fileID: 4145835565212287972, guid: 0ca7b577053ff50448a15932f67a72c5, type: 3}
   CarCreatePoint: {fileID: 682942767}
   span: 3
+  Cardirection: {x: 10, y: 0, z: 0}
+  speed: 1
+  DeleteObjectTime: 5
+  Damage: 5
 --- !u!4 &682942769
 Transform:
   m_ObjectHideFlags: 0

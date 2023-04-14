@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2263246313723850093}
   - component: {fileID: 5663643950882727836}
   - component: {fileID: 6359392587541726269}
-  - component: {fileID: -5274170856642775508}
+  - component: {fileID: 6126324166173265389}
   m_Layer: 0
   m_Name: CarTest
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4145835565212287972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.8736, y: 0.7744, z: 21.8484}
+  m_LocalPosition: {x: 174.34297, y: 0.7744, z: 21.8484}
   m_LocalScale: {x: 2.4311206, y: 0.63441986, z: 1.3883754}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -99,7 +99,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-5274170856642775508
+--- !u!114 &6126324166173265389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,9 +111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c6ea2ab20cdfd54da5edb4d5d8963dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cardirection: {x: 10, y: 0, z: 0}
-  speed: 1
-  DeleteObjectTime: 5
+  Cardirection: {x: 0, y: 0, z: 0}
+  speed: 0
+  DeleteObjectTime: 0
+  Damage: 0
 --- !u!1 &7152207676479729231
 GameObject:
   m_ObjectHideFlags: 0

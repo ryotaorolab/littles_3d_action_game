@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 94
+  controlID: 83
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 130
+  controlID: 40
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9cf6ffff
-      m_LastClickedID: -2404
-      m_ExpandedIDs: 1cfbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e4c9ffff1cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -326,7 +326,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 7}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -416,22 +416,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefab
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\document\UnityProject\littles_3d_action_game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 32760000
-    m_LastClickedID: 30258
-    m_ExpandedIDs: 000000003276000000ca9a3bffffff7f
+    m_SelectedIDs: ec770000
+    m_LastClickedID: 30700
+    m_ExpandedIDs: 0000000032760000f277000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -832,9 +832,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 21.865152, y: 2.6374578, z: 5.9995604}
+    m_Target: {x: 24.642214, y: -4.919423, z: 27.455841}
     speed: 2
-    m_Value: {x: 21.865152, y: 2.6374578, z: 5.9995604}
+    m_Value: {x: 24.642214, y: -4.919423, z: 27.455841}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -881,20 +881,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0946957, y: -0.24321382, z: 0.0238639, w: -0.96506816}
+    m_Target: {x: 0.2912866, y: -0.029513417, z: 0.0089924475, w: 0.9561473}
     speed: 2
-    m_Value: {x: -0.09469351, y: -0.2432082, z: 0.02386335, w: -0.96504587}
+    m_Value: {x: 0.29128405, y: -0.02951316, z: 0.008992369, w: 0.95613897}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 11.624964
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 11.624964
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 0.58709997
+    m_SpeedNormalized: 0.29
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1

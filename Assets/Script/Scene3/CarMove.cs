@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class CarMove : MonoBehaviour
 {
-    [SerializeField]
-    Vector3 Cardirection; //車の進行方向先
-    [SerializeField] float speed; //車の速度
-    [SerializeField] float DeleteObjectTime; //車が消えるまでの時間
+    public Vector3 Cardirection; //車の進行方向先
+    public float speed; //車の速度
+    public float DeleteObjectTime; //車が消えるまでの時間
+    public int Damage;
+
+    GameObject HPController;
+    HPController hpController;
 
     // Start is called before the first frame update
     void Start()
     {
+        HPController = GameObject.Find("HPController");
+        hpController = HPController.GetComponent<HPController>();
+
         StartCoroutine("DestoroyCar");
     }
 
@@ -27,6 +33,14 @@ public class CarMove : MonoBehaviour
         {
             yield return new WaitForSeconds(DeleteObjectTime);
             Destroy(this.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Chick")
+        {
+            hpController.HPreduce(Damage);
         }
     }
 }
