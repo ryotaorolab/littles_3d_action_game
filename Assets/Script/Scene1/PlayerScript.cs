@@ -107,10 +107,13 @@ public class PlayerScript : MonoBehaviour
                 x = 0;
             }
         }
+        Gravity();
     }
+
+
     private void FixedUpdate()
     {
-        Gravity();
+        
     }
 
     private void OnCollisionStay(Collision other)

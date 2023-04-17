@@ -66,12 +66,14 @@
     <Compile Include="Assets\Script\Start\CameraMove.cs" />
     <Compile Include="Assets\Script\StageSelect\Stageselect.cs" />
     <Compile Include="Assets\Script\Scene1\ThornContloller.cs" />
+    <Compile Include="Assets\Script\Scene3\CarGenerate.cs" />
     <Compile Include="Assets\Script\Start\TutorialJump.cs" />
     <Compile Include="Assets\Script\Scene1\PlayerScript.cs" />
     <Compile Include="Assets\Script\Scene1\EnemyController.cs" />
     <Compile Include="Assets\IkinokoBattle\Model\StageItem\CoinScript.cs" />
     <Compile Include="Assets\Script\Start\TeleportScript.cs" />
     <Compile Include="Assets\Script\Scene1\HPController.cs" />
+    <Compile Include="Assets\Script\Scene3\CarMove.cs" />
     <Compile Include="Assets\Script\StageSelect\StageSelectCameraMove.cs" />
     <Compile Include="Assets\Script\StageSelect\StageProgress.cs" />
     <Compile Include="Assets\Script\Scene1\Goal.cs" />
@@ -80,8 +82,7 @@
     <Compile Include="Assets\Script\Scene1\DieAreaScript.cs" />
     <Compile Include="Assets\Script\Start\TutorialMocie.cs" />
     <Compile Include="Assets\Script\Scene1\AcceleratingPlate.cs" />
-    <Compile Include="Assets\Script\Scene3\CarGenerate.cs" />
-    <Compile Include="Assets\Script\Scene3\CarMove.cs" />
+    <Compile Include="Assets\Script\Scene4\Stage4Door.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\Toon.shader" />
