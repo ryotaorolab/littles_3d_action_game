@@ -77,16 +77,35 @@ public class EnemyController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "Chick")
+        //if(collision.gameObject.name == "Chick")
+        //{
+        //    // 当たった時に棘を隠している状況のときだったら
+        //    if(stopsize == true)
+        //    {
+        //        Destroy(this.gameObject);
+        //    } else
+        //    { // 棘を出しているときに当たった時の処理
+        //        hpController.HPreduce(1);
+        //    }
+        //}
+
+        if (collision.gameObject.name == "Chick")
         {
-            // 当たった時に棘を隠している状況のときだったら
-            if(stopsize == true)
-            {
-                Destroy(this.gameObject);
-            } else
-            { // 棘を出しているときに当たった時の処理
-                hpController.HPreduce(1);
-            }
+            // 棘を出しているときに当たった時の処理
+            hpController.HPreduce(1);
+        }
+    }
+
+    public void OnAttackPlayer()
+    {
+        // 当たった時に棘を隠している状況のときだったら
+        if (stopsize == true)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        { // 棘を出しているときに当たった時の処理
+            hpController.HPreduce(1);
         }
     }
 }

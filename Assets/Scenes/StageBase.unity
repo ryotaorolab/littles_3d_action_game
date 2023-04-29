@@ -3053,6 +3053,7 @@ MonoBehaviour:
   gravityPower: -30
   StateMove: 0
   ClearStateMove: 0
+  PCMode: 0
 --- !u!95 &908145873
 Animator:
   serializedVersion: 4
@@ -3108,6 +3109,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e380a72a9681fe44a4eb90244590d96, type: 3}
   m_PrefabInstance: {fileID: 908145870}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &908145877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908145871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1ddfb65b891654aa54f06a55977c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 908145875}
+  jumpPower: 7
+  jumpCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.8
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxJumpTime: 0.6
+  groundCheckRadius: 0.4
+  groundCheckOffsetY: 0.12
+  groundCheckDistance: 0.2
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  JumpButtonName: Jump
 --- !u!1 &919569703 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 152508, guid: 98edced06879f3446b204b95d885e760, type: 3}
@@ -6296,8 +6343,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 908145872}
-        m_TargetAssemblyTypeName: PlayerScript, Assembly-CSharp
+      - m_Target: {fileID: 908145877}
+        m_TargetAssemblyTypeName: PlayerJump, Assembly-CSharp
         m_MethodName: OnJumpButton
         m_Mode: 1
         m_Arguments:

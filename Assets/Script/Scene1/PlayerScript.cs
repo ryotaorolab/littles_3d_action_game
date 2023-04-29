@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-
+    /// <summary>
+    /// 参考サイト
+    /// https://kurokumasoft.com/2022/04/12/unity-jump/
+    /// </summary>
+    /// 
     private float x;
     private float z;
     [SerializeField]
@@ -68,10 +72,10 @@ public class PlayerScript : MonoBehaviour
                 transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * smooth);
             }
 
-            if (Input.GetKeyDown(KeyCode.Space) && isGround)
-            {
-                rb.AddForce(transform.up * upForce, ForceMode.Impulse);
-            }
+            // if (Input.GetKeyDown(KeyCode.Space) && isGround)
+            // {
+            //    rb.AddForce(transform.up * upForce, ForceMode.Impulse);
+            //}
 
             bool LRPush = false; // 右左のボタンが押されているとき、前に進むのをやめるフラグ
 
@@ -107,7 +111,7 @@ public class PlayerScript : MonoBehaviour
                 x = 0;
             }
         }
-        Gravity();
+        // Gravity();
     }
 
 
@@ -172,3 +176,4 @@ public class PlayerScript : MonoBehaviour
         }
     }
 }
+

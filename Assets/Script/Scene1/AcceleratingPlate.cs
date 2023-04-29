@@ -24,6 +24,7 @@ public class AcceleratingPlate : MonoBehaviour
     {
         if (collision.gameObject.name == "Chick")
         {
+            Debug.Log("JumpDai");
             rb.AddForce(ForceVer, ForceMode.Impulse);
         }
     }
