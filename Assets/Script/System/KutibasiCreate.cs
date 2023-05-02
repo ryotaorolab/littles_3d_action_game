@@ -10,11 +10,16 @@ public class KutibasiCreate : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            // Create a new projectile GameObject.
-            GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
-            projectile.name = "くちばし";
-            // Set the projectile's velocity to be in the direction the player is facing.
-            projectile.transform.Translate(transform.TransformDirection(Vector3.forward) * projectileSpeed * Time.deltaTime);
+            OnKutibasiAttack();
         }
+    }
+
+    public void OnKutibasiAttack()
+    {
+        // Create a new projectile GameObject.
+        GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
+        projectile.name = "くちばし";
+        // Set the projectile's velocity to be in the direction the player is facing.
+        projectile.transform.Translate(transform.TransformDirection(Vector3.forward) * projectileSpeed * Time.deltaTime);
     }
 }

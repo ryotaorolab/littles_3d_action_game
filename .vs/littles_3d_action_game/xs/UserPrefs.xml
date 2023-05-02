@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{8832940D-1987-5535-E45B-2F523580E12E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/System/KutibasiMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Scene1/PlayerScript.cs">
     <Files>
-      <File FileName="Assets/Script/System/KutibasiAttack.cs" Line="3" Column="28" />
-      <File FileName="Assets/Script/System/KutibasiMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/System/PlayerJump.cs" Line="44" Column="43" />
+      <File FileName="Assets/Script/Scene1/PlayerScript.cs" Line="38" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,9 +10,10 @@
           <Node name="littles_3d_action_game" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
-                <Node name="System" expanded="True">
-                  <Node name="KutibasiMove.cs" selected="True" />
+                <Node name="Scene1" expanded="True">
+                  <Node name="PlayerScript.cs" selected="True" />
                 </Node>
+                <Node name="System" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1f335250-9d86-4e75-9047-75f99f2fafd2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b43c8eab-2c70-44cf-86cc-41cc863c42eb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

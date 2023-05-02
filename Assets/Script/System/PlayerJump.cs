@@ -28,10 +28,20 @@ public class PlayerJump : MonoBehaviour
     float jumpTime = 0;
     RaycastHit hit;
     Transform thisTransform;
+    GameObject ChickPlayer;
+    PlayerScript playerScript;
+    [SerializeField]
+    float JumpWalkSpeed;
+
+    float Defaultspeed;
 
     void Start()
     {
         thisTransform = transform;
+        ChickPlayer = GameObject.Find("Chick");
+        playerScript = ChickPlayer.GetComponent<PlayerScript>();
+        //　通常時のスピードを取得
+        Defaultspeed = playerScript.Speed;
     }
 
     // Update is called once per frame
@@ -61,8 +71,12 @@ public class PlayerJump : MonoBehaviour
             {
                 jumping = false;
                 jumpTime = 0;
+                // ジャンプのスピードをもとに戻す
+                playerScript.Speed = Defaultspeed;
             }
             jumpTime += Time.deltaTime;
+            //ジャンプ時だけスピードを変える。
+            playerScript.Speed = JumpWalkSpeed;
         }
 
     }
@@ -89,6 +103,8 @@ public class PlayerJump : MonoBehaviour
         {
             jumping = false;
             jumpTime = 0;
+            // ジャンプのスピードをもとに戻す
+            playerScript.Speed = Defaultspeed;
         }
 
         rigidbody.AddForce(power * Vector3.up, ForceMode.Impulse);

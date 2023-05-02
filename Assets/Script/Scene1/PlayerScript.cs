@@ -34,6 +34,8 @@ public class PlayerScript : MonoBehaviour
         isGround = false;
         // 変数animに、Animatorコンポーネントを設定する
         anim = gameObject.GetComponent<Animator>();
+        //　通常時のスピードを取得
+        Defaultspeed = Speed;
     }
 
     // Update is called once per frame
@@ -120,11 +122,13 @@ public class PlayerScript : MonoBehaviour
         
     }
 
+    float Defaultspeed;
     private void OnCollisionStay(Collision other)
     {
         if (other.gameObject.tag == "Plain")
         {
             isGround = true;
+            Speed = Defaultspeed;
         }
     }
 
