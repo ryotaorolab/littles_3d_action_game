@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets/Script/StageSelect/StageIndication.cs" />
     <Compile Include="Assets/Script/Scene1/JumpTableTest.cs" />
+    <Compile Include="Assets/Script/Scene4/Stage4HammerRotator.cs" />
     <Compile Include="Assets/Script/Scene1/KakeraScript.cs" />
     <Compile Include="Assets/Script/Scene1/EnemyMove.cs" />
     <Compile Include="Assets/Script/Scene1/CameraContoller2.cs" />

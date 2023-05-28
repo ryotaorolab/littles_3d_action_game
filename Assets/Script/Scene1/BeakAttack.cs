@@ -24,6 +24,9 @@ public class BeakAttack : MonoBehaviour
             Debug.Log(collision.gameObject.name);
             collision.gameObject.GetComponent<EnemyController>().OnAttackPlayer();
             Destroy(gameObject);
+        } else
+        {
+            Destroy(gameObject);
         }
 
     }
